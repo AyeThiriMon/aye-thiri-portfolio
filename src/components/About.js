@@ -21,7 +21,7 @@ const About = () => {
             <a
               href="#projects"
               className="see_my_work">
-              See My Past Work
+              See My Work
             </a>
           </div>
         </div>
