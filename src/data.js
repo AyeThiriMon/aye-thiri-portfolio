@@ -6,7 +6,7 @@ export const projects = [
       subtitle: "MERN Stack",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/CuteCat.jpg",
+      image: "./images/CuteCat.jpg",
       link: "https://reactbootcamp.com",
     },
     {
@@ -14,7 +14,7 @@ export const projects = [
       subtitle: "React and Python",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/CuteCat.jpg",
+      image: "./images/CuteCat.jpg",
       link: "https://reedbarger.com",
     },
     {
@@ -22,7 +22,7 @@ export const projects = [
       subtitle: "React and Firebase",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/CuteCat.jpg",
+      image: "./images/CuteCat.jpg",
       link: "https://jsbootcamp.com",
     },
     {
@@ -30,7 +30,7 @@ export const projects = [
       subtitle: "React Hooks",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/CuteCat.jpg",
+      image: "./images/CuteCat.jpg",
       link: "https://pythonbootcamp.com",
     },
   ];
@@ -48,27 +48,27 @@ export const projects = [
       name: "MERN Stack",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/CuteCat.jpg",
+      image: "./images/CuteCat.jpg",
     },
     {
       quote: "React Tracks",
       name: "React and Python",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/CuteCat.jpg",
+      image: "./images/CuteCat.jpg",
     },
     {
       quote: "DevChat",
       name: "React and Firebase",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/CuteCat.jpg",
+      image: "./images/CuteCat.jpg",
     },
     {
       quote: "Epic Todo App",
       name: "React Hooks",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/CuteCat.jpg",
+      image: "./images/CuteCat.jpg",
     },
   ];
