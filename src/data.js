@@ -2,31 +2,21 @@
 
 export const projects = [
     {
-      title: "React Reserve",
-      subtitle: "MERN Stack",
+      title: "React and Tailwind",
+      subtitle: "CSS",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: "./images/CuteCat.jpg",
-      link: "https://reactbootcamp.com",
     },
     {
-      title: "React Tracks",
-      subtitle: "React and Python",
+      title: "React",
+      subtitle: "React and Laravel",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: "./images/CuteCat.jpg",
-      link: "https://reedbarger.com",
     },
     {
-      title: "DevChat",
-      subtitle: "React and Firebase",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./images/CuteCat.jpg",
-      link: "https://jsbootcamp.com",
-    },
-    {
-      title: "Epic Todo App",
+      title: "",
       subtitle: "React Hooks",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
@@ -44,28 +34,21 @@ export const projects = [
 
   export const testimonials = [
     {
-      quote: "React Reserve",
-      name: "MERN Stack",
+      quote: "React and Tailwind",
+      name: "CSS",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: "./images/CuteCat.jpg",
     },
     {
-      quote: "React Tracks",
-      name: "React and Python",
+      quote: "React",
+      name: "React and Laravel",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: "./images/CuteCat.jpg",
     },
     {
-      quote: "DevChat",
-      name: "React and Firebase",
-      company:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./images/CuteCat.jpg",
-    },
-    {
-      quote: "Epic Todo App",
+      quote: "React",
       name: "React Hooks",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
