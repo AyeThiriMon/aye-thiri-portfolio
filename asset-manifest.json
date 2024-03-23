@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/aye-thiri-portfolio/static/css/main.17a0352c.css",
-    "main.js": "/aye-thiri-portfolio/static/js/main.7e3cea94.js",
+    "main.js": "/aye-thiri-portfolio/static/js/main.e413c949.js",
     "static/js/453.952ee086.chunk.js": "/aye-thiri-portfolio/static/js/453.952ee086.chunk.js",
     "index.html": "/aye-thiri-portfolio/index.html",
     "main.17a0352c.css.map": "/aye-thiri-portfolio/static/css/main.17a0352c.css.map",
-    "main.7e3cea94.js.map": "/aye-thiri-portfolio/static/js/main.7e3cea94.js.map",
+    "main.e413c949.js.map": "/aye-thiri-portfolio/static/js/main.e413c949.js.map",
     "453.952ee086.chunk.js.map": "/aye-thiri-portfolio/static/js/453.952ee086.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17a0352c.css",
-    "static/js/main.7e3cea94.js"
+    "static/js/main.e413c949.js"
   ]
 }
