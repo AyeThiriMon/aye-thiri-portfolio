@@ -29,7 +29,7 @@ const About = () => {
           <img
             className="object-cover object-center h-1/3 rounded"
             alt="hero"
-            src="./aye-thiri-portfolio/images/drawing_system.svg"
+            src="https://ayethirimon.github.io/aye-thiri-portfolio/images/drawing_system.svg"
           />
         </div>
       </div>
