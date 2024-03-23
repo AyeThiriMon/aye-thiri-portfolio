@@ -10,7 +10,7 @@ const About = () => {
             <br className="hidden lg:inline-block" />I love to build Web Apps.
           </h1>
           <p className="mb-8 leading-relaxed">
-            Meticulous web developer with over a year experience in full-stack development with PHP and one year plus in React JS development and passion for responsive website design. 
+            Web developer with over a year experience in full-stack development with PHP and one year plus in React JS development and passion for responsive website design. 
           </p>
           <div className="flex justify-center">
             <a
@@ -29,7 +29,7 @@ const About = () => {
           <img
             className="object-cover object-center h-1/3 rounded"
             alt="hero"
-            src="./images/CuteCat.jpg"
+            src="./aye-thiri-portfolio/images/drawing_system.svg"
           />
         </div>
       </div>

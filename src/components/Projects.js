@@ -12,9 +12,7 @@ export default function Projects() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            I have included project development in this projects.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -29,7 +27,7 @@ export default function Projects() {
                   className="relative md:w-48 mh:w-48 rounded inset-0 object-cover object-center"
                   src={project.image}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900">
+                <div className="px-8 py-10 relative z-2 w-full border-4 border-gray-800 bg-gray-900">
                   
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}

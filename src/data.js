@@ -2,34 +2,61 @@
 
 export const projects = [
     {
-      title: "React and Tailwind",
-      subtitle: "CSS",
+      title: "Bamawl HR System",
+      subtitle: "Integrated System",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./images/CuteCat.jpg",
+        "Arranging payroll, storing accurate employee information, keeping up-to-date attendance and monitoring performance of employee workforce in system lead to provide the best support of HR activities.",
+      image: "./aye-thiri-portfolio/images/Bamawl_HR.png",
+      link: "https://bamawl.cloudhr.co/",
     },
     {
-      title: "React",
+      title: "Contract Mangement System",
       subtitle: "React and Laravel",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./images/CuteCat.jpg",
+        "Arrangement under which operational control of an enterprise is vested by contract in a separate enterprise that performs the necessary managerial functions.",
+      image: "./aye-thiri-portfolio/images/Contract_Management_System.jpg",
     },
     {
-      title: "",
-      subtitle: "React Hooks",
+      title: "Alcohol Detection Result Control System",
+      subtitle: "Driver Management",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./images/CuteCat.jpg",
-      link: "https://pythonbootcamp.com",
+        "Alcohol detection collection system is used to collect measurements whether the driver is under the influence of alcohol while driving.",
+      image: "./aye-thiri-portfolio/images/Alcohol_Management_System.jpg",
     },
   ];
 
 
   export const skills = [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    {
+      name: "HTML",
+      color: "#d1d4ff",
+      value: 99
+    },
+    {
+      name: "CSS",
+      color: "#fdff84",
+      value: 90
+    },
+    {
+      name: "Bootstrap",
+      color: "#ff8b90",
+      value: 95
+    },
+    {
+      name: "Pure PHP",
+      color: "#ffe4e0",
+      value: 90
+    },
+    {
+      name: "Laravel PHP",
+      color: "#a8b3ff",
+      value: 75
+    },
+    {
+      name: "React JS",
+      color: "#b12228",
+      value: 70
+    }
   ];
 
   export const testimonials = [
@@ -38,20 +65,20 @@ export const projects = [
       name: "CSS",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./images/CuteCat.jpg",
+      image: "./aye-thiri-portfolio/images/CuteCat.jpg",
     },
     {
       quote: "React",
       name: "React and Laravel",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./images/CuteCat.jpg",
+      image: "./aye-thiri-portfolio/images/CuteCat.jpg",
     },
     {
       quote: "React",
       name: "React Hooks",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./images/CuteCat.jpg",
+      image: "./aye-thiri-portfolio/images/CuteCat.jpg",
     },
   ];
