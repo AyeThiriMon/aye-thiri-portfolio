@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/aye-thiri-portfolio/static/css/main.74024ee9.css",
-    "main.js": "/aye-thiri-portfolio/static/js/main.ada747fd.js",
-    "static/js/787.a2bf511c.chunk.js": "/aye-thiri-portfolio/static/js/787.a2bf511c.chunk.js",
+    "main.css": "/aye-thiri-portfolio/static/css/main.17a0352c.css",
+    "main.js": "/aye-thiri-portfolio/static/js/main.4fc98bea.js",
+    "static/js/453.952ee086.chunk.js": "/aye-thiri-portfolio/static/js/453.952ee086.chunk.js",
     "index.html": "/aye-thiri-portfolio/index.html",
-    "main.74024ee9.css.map": "/aye-thiri-portfolio/static/css/main.74024ee9.css.map",
-    "main.ada747fd.js.map": "/aye-thiri-portfolio/static/js/main.ada747fd.js.map",
-    "787.a2bf511c.chunk.js.map": "/aye-thiri-portfolio/static/js/787.a2bf511c.chunk.js.map"
+    "main.17a0352c.css.map": "/aye-thiri-portfolio/static/css/main.17a0352c.css.map",
+    "main.4fc98bea.js.map": "/aye-thiri-portfolio/static/js/main.4fc98bea.js.map",
+    "453.952ee086.chunk.js.map": "/aye-thiri-portfolio/static/js/453.952ee086.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74024ee9.css",
-    "static/js/main.ada747fd.js"
+    "static/css/main.17a0352c.css",
+    "static/js/main.4fc98bea.js"
   ]
 }
