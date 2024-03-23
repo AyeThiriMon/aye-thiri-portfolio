@@ -6,7 +6,7 @@ export const projects = [
       subtitle: "Integrated System",
       description:
         "Arranging payroll, storing accurate employee information, keeping up-to-date attendance and monitoring performance of employee workforce in system lead to provide the best support of HR activities.",
-      image: "./aye-thiri-portfolio/images/Bamawl_HR.png",
+      image: "../images/Bamawl_HR.png",
       link: "https://bamawl.cloudhr.co/",
     },
     {
@@ -14,14 +14,14 @@ export const projects = [
       subtitle: "React and Laravel",
       description:
         "Arrangement under which operational control of an enterprise is vested by contract in a separate enterprise that performs the necessary managerial functions.",
-      image: "./aye-thiri-portfolio/images/Contract_Management_System.jpg",
+      image: "../images/Contract_Management_System.jpg",
     },
     {
       title: "Alcohol Detection Result Control System",
       subtitle: "Driver Management",
       description:
         "Alcohol detection collection system is used to collect measurements whether the driver is under the influence of alcohol while driving.",
-      image: "./aye-thiri-portfolio/images/Alcohol_Management_System.jpg",
+      image: "../images/Alcohol_Management_System.jpg",
     },
   ];
 
@@ -65,20 +65,20 @@ export const projects = [
       name: "CSS",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./aye-thiri-portfolio/images/CuteCat.jpg",
+      image: "../images/CuteCat.jpg",
     },
     {
       quote: "React",
       name: "React and Laravel",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./aye-thiri-portfolio/images/CuteCat.jpg",
+      image: "../images/CuteCat.jpg",
     },
     {
       quote: "React",
       name: "React Hooks",
       company:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./aye-thiri-portfolio/images/CuteCat.jpg",
+      image: "../images/CuteCat.jpg",
     },
   ];
