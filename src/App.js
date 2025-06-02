@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
 
 function App() {
+  const [isBlack, setIsBlack] = useState(true);
+
+  const toggleTheme = () => {
+    setIsBlack(!isBlack);
+  };
+
   return (
-    <div className="text-gray-400 bg-gray-900 body-font">
-      <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      {/* <Testimonials /> */}
-      <Contact />
+     <div className={isBlack ? "bg-black text-white" : "bg-pink-100 text-black"} style={{ fontFamily: "'Dancing Script', cursive" }}>
+      <Navbar onToggleTheme={toggleTheme} isBlack={isBlack} />
+      <About onToggleTheme={toggleTheme} isBlack={isBlack} />
+      <Projects onToggleTheme={toggleTheme} isBlack={isBlack} />
+      <Skills onToggleTheme={toggleTheme} isBlack={isBlack} />
+      <Contact onToggleTheme={toggleTheme} isBlack={isBlack} />
     </div>
   );
 } 

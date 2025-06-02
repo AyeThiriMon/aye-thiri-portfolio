@@ -23,6 +23,13 @@ export const projects = [
         "Alcohol detection collection system is used to collect measurements whether the driver is under the influence of alcohol while driving.",
       image: "https://ayethirimon.github.io/aye-thiri-portfolio/images/Alcohol_Management_System.jpg",
     },
+    {
+      title: "Disaster Record System",
+      subtitle: "Disaster record-keeping",
+      description:
+        "A comprehensive system designed to record, manage, and analyze disaster, enabling quick response and efficient coordination during emergencies.",
+      image: "https://ayethirimon.github.io/aye-thiri-portfolio/images/Alcohol_Management_System.jpg",
+    },
   ];
 
 
