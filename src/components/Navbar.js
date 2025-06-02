@@ -1,29 +1,49 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
-import React from "react";
+import { ArrowRightIcon, SunIcon, MoonIcon } from "@heroicons/react/solid";
+import React, { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ onToggleTheme, isBlack }) {
   return (
-    <header className="bg-gray-800 lg:sticky md:sticky sm:sticky top-0 z-10">
+    <header className={`top-0 z-10 sticky ${isBlack ? "bg-black" : "bg-pink-200"}`} style={{ fontFamily: "'Dancing Script', cursive" }}>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="title-font font-medium text-white mb-4 md:mb-0">
-          <a href="#about" className="ml-3 text-3xl">
-            AT
-          </a>
+        {/* Logo / Title */}
+        <a className="title-font font-medium mb-4 md:mb-0" href="#about">
+          <span className={`ml-3 text-3xl ${isBlack ? "text-pink-400" : "text-black"}`}>AT</span>
         </a>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-slate-50	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 hover:text-white">
+
+        {/* Navigation Links */}
+        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex flex-wrap items-center text-base justify-center border-slate-50">
+          <a href="#projects" className={`mr-5 hover:underline ${isBlack ? "text-white" : "text-black"}`}>
             Work
           </a>
-          <a href="#skills" className="mr-5 hover:text-white">
+          <a href="#skills" className={`mr-5 hover:underline ${isBlack ? "text-white" : "text-black"}`}>
             Skills
           </a>
-          {/* <a href="#testimonials" className="mr-5 hover:text-white">
-            Testimonials
-          </a> */}
         </nav>
+
+        {/* Theme Toggle Button */}
+        <button
+          onClick={onToggleTheme}
+          className={`p-2 rounded-full shadow-md transition mr-4 ${
+            isBlack
+              ? "bg-pink-500 text-white hover:bg-pink-400"
+              : "bg-black text-white hover:bg-gray-800"
+          }`}
+          aria-label="Toggle Theme"
+        >
+          {isBlack ? (
+            <SunIcon className="w-5 h-5" />
+          ) : (
+            <MoonIcon className="w-5 h-5 text-pink-100" />
+          )}
+        </button>
+
+        {/* Hire Me Button */}
         <a
           href="#contact"
-          className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+          className={`inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 transition ${
+            isBlack ? "bg-gray-800 text-white hover:bg-gray-700" : "bg-pink-400 text-black hover:bg-pink-300"
+          }`}
+        >
           Hire Me
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </a>

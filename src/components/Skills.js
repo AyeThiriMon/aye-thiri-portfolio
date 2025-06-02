@@ -2,28 +2,80 @@ import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
-export default function Skills() {
+const Skills = (isBlack) => {
   return (
-    <section id="skills">
-      <div className="container_p_xy_510_mx_auto">
-        <div className="text-center mb-20">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-            Skills &amp; Technologies
-          </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-          I work as a full-stack developer, aiming to create clean code and responsive designs for user-friendly systems. I'm showcasing my skills using graphs proficiency in PHP, CSS, and more.
-          </p>
-        </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          {skills.map((skill) => (
-            <div className="progress">
-              {/* <div class="" style={{background: `${skill.color}`}}><span>{skill.name}</span></div> */}
-              <div className="progress-bar" role="progressbar" style={{width: `${skill.value}%`}} aria-valuenow={`${skill.value}`} aria-valuemin="0" aria-valuemax="100">
-              </div>
+    <section
+      id="skills"
+      className={`min-h-screen py-30 pt-20 transition duration-500 ${
+        isBlack ? "bg-black text-white" : "bg-pink-100 text-black"
+      }`}
+    >
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl mb-6 font-bold">Skills & Technologies</h2>
+        <p className="mb-8">
+          As a full-stack developer, I’m passionate about writing clean, maintainable code and building responsive designs that deliver a seamless user experience. Below is a quick overview of my technical proficiency:
+        </p>
+
+        {/* Skills Bar Graph */}
+        <div className="space-y-6">
+          <div>
+            <div className="flex justify-between mb-1">
+              <span>HTML</span>
+              <span>100%</span>
             </div>
-          ))}
+            <div className="w-full bg-gray-300 rounded-full h-4">
+              <div className="bg-pink-500 h-4 rounded-full" style={{ width: "100%" }}></div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-between mb-1">
+              <span>Javascript</span>
+              <span>90%</span>
+            </div>
+            <div className="w-full bg-gray-300 rounded-full h-4">
+              <div className="bg-pink-500 h-4 rounded-full" style={{ width: "90%" }}></div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-between mb-1">
+              <span>JQuery</span>
+              <span>90%</span>
+            </div>
+            <div className="w-full bg-gray-300 rounded-full h-4">
+              <div className="bg-pink-500 h-4 rounded-full" style={{ width: "90%" }}></div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-between mb-1">
+              <span>CSS</span>
+              <span>95%</span>
+            </div>
+            <div className="w-full bg-gray-300 rounded-full h-4">
+              <div className="bg-pink-500 h-4 rounded-full" style={{ width: "95%" }}></div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-between mb-1">
+              <span>Pure PHP/Laravel PHP</span>
+              <span>90%</span>
+            </div>
+            <div className="w-full bg-gray-300 rounded-full h-4">
+              <div className="bg-pink-500 h-4 rounded-full" style={{ width: "90%" }}></div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-between mb-1">
+              <span>React JS</span>
+              <span>80%</span>
+            </div>
+            <div className="w-full bg-gray-300 rounded-full h-4">
+              <div className="bg-pink-500 h-4 rounded-full" style={{ width: "80%" }}></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
+export default Skills;
