@@ -18,7 +18,7 @@ const Projects = ({ onToggleTheme, isBlack }) => {
         {projects.map((project, idx) => (
           <a
             href={project.link}
-            key={project.image}
+            key={idx}
             className="h-full"
           >
             <div

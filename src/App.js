@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-     <div className={isBlack ? "bg-black text-white" : "bg-pink-100 text-black"} style={{ fontFamily: "'Dancing Script', cursive" }}>
+     <div style={{ fontFamily: "'Dancing Script', cursive" }}>
       <Navbar onToggleTheme={toggleTheme} isBlack={isBlack} />
       <About onToggleTheme={toggleTheme} isBlack={isBlack} />
       <Projects onToggleTheme={toggleTheme} isBlack={isBlack} />

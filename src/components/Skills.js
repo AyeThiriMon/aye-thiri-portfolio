@@ -2,14 +2,9 @@ import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
-const Skills = (isBlack) => {
+const Skills = ({isBlack}) => {
   return (
-    <section
-      id="skills"
-      className={`min-h-screen py-30 pt-20 transition duration-500 ${
-        isBlack ? "bg-black text-white" : "bg-pink-100 text-black"
-      }`}
-    >
+    <section id="skills" className={`py-16 px-6 ${isBlack ? "bg-black text-white" : "bg-pink-100 text-black"}`}>
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl mb-6 font-bold">Skills & Technologies</h2>
         <p className="mb-8">

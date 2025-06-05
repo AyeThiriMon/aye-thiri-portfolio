@@ -1,14 +1,33 @@
-import { ArrowRightIcon, SunIcon, MoonIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon, SunIcon, MoonIcon, MenuIcon, XIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
 
 export default function Navbar({ onToggleTheme, isBlack }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className={`top-0 z-10 sticky ${isBlack ? "bg-black" : "bg-pink-200"}`} style={{ fontFamily: "'Dancing Script', cursive" }}>
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
         {/* Logo / Title */}
         <a className="title-font font-medium mb-4 md:mb-0" href="#about">
           <span className={`ml-3 text-3xl ${isBlack ? "text-pink-400" : "text-black"}`}>AT</span>
         </a>
+
+        {/* Hamburger Button */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden p-2 rounded-full focus:outline-none transition"
+          aria-label="Toggle Menu"
+        >
+          {isMenuOpen ? (
+            <XIcon
+              className={`w-6 h-6 ${isBlack ? "text-white" : "text-black"}`}
+            />
+          ) : (
+            <MenuIcon
+              className={`w-6 h-6 ${isBlack ? "text-white" : "text-black"}`}
+            />
+          )}
+        </button>
 
         {/* Navigation Links */}
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l flex flex-wrap items-center text-base justify-center border-slate-50">
