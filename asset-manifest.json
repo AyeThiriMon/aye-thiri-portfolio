@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aye-thiri-portfolio/static/css/main.43158905.css",
+    "main.js": "/aye-thiri-portfolio/static/js/main.2d0bc60a.js",
+    "static/js/453.952ee086.chunk.js": "/aye-thiri-portfolio/static/js/453.952ee086.chunk.js",
+    "index.html": "/aye-thiri-portfolio/index.html",
+    "main.43158905.css.map": "/aye-thiri-portfolio/static/css/main.43158905.css.map",
+    "main.2d0bc60a.js.map": "/aye-thiri-portfolio/static/js/main.2d0bc60a.js.map",
+    "453.952ee086.chunk.js.map": "/aye-thiri-portfolio/static/js/453.952ee086.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43158905.css",
+    "static/js/main.2d0bc60a.js"
+  ]
+}
