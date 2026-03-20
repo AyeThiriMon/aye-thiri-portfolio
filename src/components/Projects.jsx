@@ -14,7 +14,7 @@ const Projects = ({ onToggleTheme, isBlack }) => {
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base pb-5">
         I have included project development in this projects.
       </p>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {projects.map((project, idx) => (
           <a
             href={project.link}
@@ -29,13 +29,13 @@ const Projects = ({ onToggleTheme, isBlack }) => {
                   : "bg-white border-pink-600 text-black hover:shadow-lg"
               }`}
             >
-              <div className="flex-grow flex">
+              <div className="flex-grow flex flex-col sm:flex-row">
                 <img
                   alt={project.title}
                   className="relative w-full sm:w-1/2 md:w-48 h-auto object-cover object-center rounded-l-2xl"
                   src={project.image}
                 />
-                <div className={`py-10 relative z-2 w-full `}>
+                <div className={`p-6 sm:py-10 relative z-2 w-full `}>
                   <h2 className="tracking-widest text-sm title-font font-medium text-pink-500 mb-1">
                     {project.subtitle}
                   </h2>
