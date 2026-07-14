@@ -7,6 +7,7 @@ const About = ({ onToggleTheme, isBlack }) => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
   const [toSent, setToSent] = React.useState({
     first_name: '',
     last_name: '',
@@ -24,6 +25,12 @@ const About = ({ onToggleTheme, isBlack }) => {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
+    setIsLoading(true);
     send(
       'service_l0alc1a',
       'template_ig1pjyz',
@@ -34,10 +41,18 @@ const About = ({ onToggleTheme, isBlack }) => {
       },
       'XZjCdpDP8Wmwcv3om'
     )
-    .then(() => alert("Message sent!"))
+    .then(() => {
+      alert("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    })
     .catch((error) => {
       console.error("Email sending error:", error);  // log detailed error info to console
       alert("Sending failed! Please try again.");
+    })
+    .finally(() => {
+      setIsLoading(false);
     });
   }
 
@@ -52,7 +67,7 @@ const About = ({ onToggleTheme, isBlack }) => {
             scrolling="no"
             className="absolute inset-0"
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.0442803541966!2d100.6239223695527!3d13.787528801625733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d62061ccdbfd7%3A0x391e40a609a50204!2s43%20Lat%20Phrao%2091%20Alley%2C%20Khlong%20Chaokhun%20Sing%2C%20Khet%20Wang%20Thonglang%2C%20Krung%20Thep%20Maha%20Nakhon%2010310!5e1!3m2!1sen!2sth!4v1748776192164!5m2!1sen!2sth"
+            src="https://maps.google.com/maps?q=Fashion%20Chit%20Thu%20(Dress%20Creation%20School),%20Dawei,%20Myanmar&t=&z=16&ie=UTF8&iwloc=&output=embed"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
@@ -60,8 +75,8 @@ const About = ({ onToggleTheme, isBlack }) => {
                 ADDRESS:
               </h2>
               <p className={`mt-1 ${isBlack ? "text-pink-400" : "text-white"}`}>
-                38 St. (Middle Block) <br />
-                kyauktada Township, Yangon
+                Oak Pho Inn Street, Sanchi Ward <br />
+                Dawei Township, Tanintaryi
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -95,6 +110,7 @@ const About = ({ onToggleTheme, isBlack }) => {
               id="name"
               name="name"
               onChange={(e) => setName(e.target.value)}
+              disabled={isLoading}
               className={`w-full p-3 rounded-xl border focus:outline-none focus:ring-2 ${
                 isBlack
                   ? "bg-black text-white border-pink-600 focus:ring-pink-500"
@@ -111,11 +127,12 @@ const About = ({ onToggleTheme, isBlack }) => {
               id="email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
+              disabled={isLoading}
               className={`w-full p-3 rounded-xl border focus:outline-none focus:ring-2 ${
                 isBlack
                   ? "bg-black text-white border-pink-600 focus:ring-pink-500"
                   : "bg-white text-black border-pink-300 focus:ring-black"
-              }`}
+              } ${isLoading ? "opacity-50 cursor-not-allowed" : ""}`}
             />
           </div>
           <div className="relative mb-4">
@@ -127,22 +144,28 @@ const About = ({ onToggleTheme, isBlack }) => {
             <textarea
               id="message"
               name="message"
+              value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className={`w-full p-3 rounded-xl border focus:outline-none focus:ring-2 ${
+              disabled={isLoading}
+              className={`w-full p-3 rounded-xl border focus:outline-none focus:ring-2 h-32 resize-none ${
                 isBlack
                   ? "bg-black text-white border-pink-600 focus:ring-pink-500"
                   : "bg-white text-black border-pink-300 focus:ring-black"
-              }`}
+              } ${isLoading ? "opacity-50 cursor-not-allowed" : ""}`}
             />
           </div>
           <button
             type="submit"
-            className={`font-bold pt-3 px-6 rounded-full transition border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg ${
+            disabled={isLoading}
+            className={`font-bold py-3 px-6 rounded-full transition focus:outline-none text-lg ${
+              isLoading ? "opacity-50 cursor-not-allowed" : ""
+            } ${
               isBlack
                 ? "bg-pink-500 text-white hover:bg-pink-400"
                 : "bg-black text-white hover:bg-gray-800"
-            }`}>
-            Submit
+            }`}
+          >
+            {isLoading ? "Sending..." : "Submit"}
           </button>
         </form>
       </div>
